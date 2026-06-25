@@ -4,182 +4,182 @@
     "href": "presentations/DataScience.html",
     "title": "R for Data Science",
     "section": "",
-    "text": "Transform\n\n\nTools to Work with Common Variable Types\n\n\n\n\n\n\n\n\nJul 8, 2026\n\n\nBrian C. Helsel, PhD\n\n\n\n\n\n\n\n\n\n\n\n\nVisualization\n\n\nIntroduction to ggplot2\n\n\n\n\n\n\n\n\nJul 8, 2026\n\n\nAshlyn Barry\n\n\n\n\n\nNo matching items"
+    "text": "R-LAB: R for Data Science\n\n\nData Visualization: An Introduction to ggplot2\n\n\n\n\n\n\n\n\nJun 25, 2026\n\n\nAshlyn Barry\n\n\n\n\n\n\n\n\n\n\n\n\nTransform\n\n\nTools to Work with Common Variable Types\n\n\n\n\n\n\n\n\nJul 8, 2026\n\n\nBrian C. Helsel, PhD\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "presentations/DataScience/visualization.html#what-is-ggplot2",
     "href": "presentations/DataScience/visualization.html#what-is-ggplot2",
-    "title": "Visualization",
-    "section": "What is ggplot2?",
-    "text": "What is ggplot2?\n\nggplot2 is a popular R package for creating data visualizations\n“Grammar of Graphics” - build visualization by combining independent components\n\n\nKey Strengths:\n\nVersatile (scatterplots, boxplots, barcharts…)\nCustomizable: easily change formatting, fonts, colors…\nPublication-quality graphics\nOpen source and free"
+    "title": "R-LAB: R for Data Science",
+    "section": "",
+    "text": "ggplot2 is a popular R package for creating data visualizations\n“Grammar of Graphics” - build visualization by combining independent components\n\n. . .\nKey Strengths:\n\nVersatile (scatterplots, boxplots, barcharts…)\nCustomizable: easily change formatting, fonts, colors…\nPublication-quality graphics\nOpen source and free"
   },
   {
     "objectID": "presentations/DataScience/visualization.html#components-of-creating-a-chart-with-ggplot",
     "href": "presentations/DataScience/visualization.html#components-of-creating-a-chart-with-ggplot",
-    "title": "Visualization",
+    "title": "R-LAB: R for Data Science",
     "section": "7 components of creating a chart with ggplot",
-    "text": "7 components of creating a chart with ggplot\n\n\nEssential components: data, mapping, and layer\nOptional components: scales, facets, coordinates, and themes\n\nDefault modes unless modified directly"
+    "text": "7 components of creating a chart with ggplot\n\n\nEssential components: data, mapping, and layers\nOptional components: scales, facets, coordinates, and themes"
   },
   {
     "objectID": "presentations/DataScience/visualization.html#essential-components",
     "href": "presentations/DataScience/visualization.html#essential-components",
-    "title": "Visualization",
+    "title": "R-LAB: R for Data Science",
     "section": "Essential Components",
-    "text": "Essential Components\nData: Specifies the dataset for the plot\n\nggplot(data = datasetname)\n\nMapping: set of instructions on how to “map” data - In other words, it defines which variables to include and how - Uses aes() function to define aesthetics of plot\n\nggplot(data = datasetname, mapping = aes(x = height, y = weight))\n\nLayers: defines how to display the mapped data - geom_() function: defines geometry to determine how data is displayed (points, lines, etc.). More on this soon!\n\nggplot(\n  data = datasetname,\n  mapping = aes(x = height, y = weight) +\n    geom_point()\n)"
+    "text": "Essential Components\nData: Specifies the dataset for the plot\n\nggplot(data = datasetname)\n\nMapping: set of instructions on how to “map” data\n\nIn other words, it defines which variables to include and how\nUses aes() to define aesthetics of plot\n\n\nggplot(data = datasetname, mapping = aes(x = height, y = weight))\n\nLayers: defines how to display the mapped data\n\ngeom_(): defines geometry to determine how data is displayed (points, lines, etc.). More on this soon!\n\n\nggplot(data = datasetname, mapping = aes(x = height, y = weight)+ \n  geom_point())"
   },
   {
     "objectID": "presentations/DataScience/visualization.html#getting-started",
     "href": "presentations/DataScience/visualization.html#getting-started",
-    "title": "Visualization",
+    "title": "R-LAB: R for Data Science",
     "section": "Getting Started",
-    "text": "Getting Started\nInstallation Requirements:\n\nggplot2 is a core package of the tidyverse\ntidyverse must be installed and loaded\nYou only need to install the package once, but need to load it every time you start a session.\n\n\ninstall.packages(\"tidyverse\") # install package (once)\n\n\nlibrary(tidyverse) # load tidyverse (every new session)\n\n\n💡 Tip: Update R and packages regularly for latest features"
+    "text": "Getting Started\nInstallation Requirements:\n\nggplot2 is a core package of the tidyverse\ntidyverse must be installed and loaded\nYou only need to install the package once, but need to load it every time you start a session.\n\n\ninstall.packages(\"tidyverse\") # install package (once)\n\n\nlibrary(tidyverse) # load tidyverse (every new session)\n\nWarning: package 'tibble' was built under R version 4.4.3\n\n\nWarning: package 'purrr' was built under R version 4.4.3\n\n\nWarning: package 'dplyr' was built under R version 4.4.3\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.2.0     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.6.0\n✔ ggplot2   4.0.0     ✔ tibble    3.3.1\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.2.1     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n\n\n💡 Tip: Update R and packages regularly for latest features"
   },
   {
     "objectID": "presentations/DataScience/visualization.html#palmer-penguin-package",
     "href": "presentations/DataScience/visualization.html#palmer-penguin-package",
-    "title": "Visualization",
+    "title": "R-LAB: R for Data Science",
     "section": "Palmer Penguin Package",
-    "text": "Palmer Penguin Package\n\nPenguins dataset from the plamerpenguin package contains body measurements of penguins on three islands in the Palmer Archipelago, Antartica. We will be using this dataset to explore different visualizations using ggplot2.\n\n\nlibrary(palmerpenguins) # load palmer penguins dataset\npenguins # load a preview of the data\n\n# A tibble: 344 × 8\n   species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n   &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n 1 Adelie  Torgersen           39.1          18.7               181        3750\n 2 Adelie  Torgersen           39.5          17.4               186        3800\n 3 Adelie  Torgersen           40.3          18                 195        3250\n 4 Adelie  Torgersen           NA            NA                  NA          NA\n 5 Adelie  Torgersen           36.7          19.3               193        3450\n 6 Adelie  Torgersen           39.3          20.6               190        3650\n 7 Adelie  Torgersen           38.9          17.8               181        3625\n 8 Adelie  Torgersen           39.2          19.6               195        4675\n 9 Adelie  Torgersen           34.1          18.1               193        3475\n10 Adelie  Torgersen           42            20.2               190        4250\n# ℹ 334 more rows\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;\n\n\n\nYou may need to run install.packages(“palmerpenguins”) if it wasn’t previously loaded on your system."
+    "text": "Palmer Penguin Package\n\nPenguins dataset from the plamerpenguin package contains body measurements of penguins on three islands in the Palmer Archipelago, Antartica. We will use this dataset as an example of how to build figures using ggplot2.\n\n\nlibrary(palmerpenguins) # load palmer penguins dataset\npenguins # load a preview of the data\n\n# A tibble: 344 × 8\n   species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n   &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n 1 Adelie  Torgersen           39.1          18.7               181        3750\n 2 Adelie  Torgersen           39.5          17.4               186        3800\n 3 Adelie  Torgersen           40.3          18                 195        3250\n 4 Adelie  Torgersen           NA            NA                  NA          NA\n 5 Adelie  Torgersen           36.7          19.3               193        3450\n 6 Adelie  Torgersen           39.3          20.6               190        3650\n 7 Adelie  Torgersen           38.9          17.8               181        3625\n 8 Adelie  Torgersen           39.2          19.6               195        4675\n 9 Adelie  Torgersen           34.1          18.1               193        3475\n10 Adelie  Torgersen           42            20.2               190        4250\n# ℹ 334 more rows\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;\n\n\n\nYou may need to run install.packages(“palmerpenguins”) if it wasn’t previously loaded on your system."
   },
   {
     "objectID": "presentations/DataScience/visualization.html#creating-a-ggplot-with-penguins",
     "href": "presentations/DataScience/visualization.html#creating-a-ggplot-with-penguins",
-    "title": "Visualization",
+    "title": "R-LAB: R for Data Science",
     "section": "Creating a ggplot with penguins",
-    "text": "Creating a ggplot with penguins\n\nWhat is the relationship between flipper length and body mass index of penguins?\n\nStep 1: begin with the function ggplot(), telling it what data to use\nStep 2: add mapping layer, which defines the aesthetics (layout) of your plot, including defining your x and y axes\n\nggplot(\n  data = penguins,\n  mapping = aes(x = flipper_length_mm, y = body_mass_g)\n)"
+    "text": "Creating a ggplot with penguins\n\nWhat is the relationship between flipper length and body mass index of penguins?\n\nStep 1: begin with the function ggplot(), telling it what data to use\nStep 2: add mapping layer, which defines the aesthetics (layout) of your plot, including defining your x and y axes\n\nggplot(\n  data = penguins, \n  mapping = aes(x = flipper_length_mm, y = body_mass_g)\n)"
   },
   {
     "objectID": "presentations/DataScience/visualization.html#base-plot",
     "href": "presentations/DataScience/visualization.html#base-plot",
-    "title": "Visualization",
+    "title": "R-LAB: R for Data Science",
     "section": "Base plot",
     "text": "Base plot"
   },
   {
     "objectID": "presentations/DataScience/visualization.html#geometrical-object-layer-geom_",
     "href": "presentations/DataScience/visualization.html#geometrical-object-layer-geom_",
-    "title": "Visualization",
+    "title": "R-LAB: R for Data Science",
     "section": "Geometrical object layer (geom_)",
     "text": "Geometrical object layer (geom_)\nThe geom_*() layer defines your plot type. We will create a scatterplot with penguins.\n\n\n\nPlot type\ngeom_\n\n\n\n\nBar chart\ngeom_bar()\n\n\nLine chart\ngeom_line()\n\n\nBoxplot\ngeom_boxplot()\n\n\nScatterplot\ngeom_point()\n\n\nViolin plot\ngeom_violin()\n\n\nHistogram\ngeom_histogram()\n\n\n\n\nggplot(\n  data = penguins,\n  mapping = aes(x = flipper_length_mm, y = body_mass_g)\n) +\n  geom_point()"
   },
   {
     "objectID": "presentations/DataScience/visualization.html#plot-data",
     "href": "presentations/DataScience/visualization.html#plot-data",
-    "title": "Visualization",
+    "title": "R-LAB: R for Data Science",
     "section": "Plot data",
-    "text": "Plot data"
+    "text": "Plot data\n\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_point()`)."
   },
   {
     "objectID": "presentations/DataScience/visualization.html#categorizing-by-species",
     "href": "presentations/DataScience/visualization.html#categorizing-by-species",
-    "title": "Visualization",
+    "title": "R-LAB: R for Data Science",
     "section": "Categorizing by species",
     "text": "Categorizing by species\n\nDoes the relationship between flipper length and body mass index differ by species?\n\n\nnames(penguins) # view variable names in dataset\n\n[1] \"species\"           \"island\"            \"bill_length_mm\"   \n[4] \"bill_depth_mm\"     \"flipper_length_mm\" \"body_mass_g\"      \n[7] \"sex\"               \"year\"             \n\n\nModify aesthetics to categorize species by color.\n\nggplot(\n  data = penguins,\n  mapping = aes(x = flipper_length_mm, y = body_mass_g, color = species)\n) +\n  geom_point()"
   },
   {
     "objectID": "presentations/DataScience/visualization.html#categorize-species-by-color",
     "href": "presentations/DataScience/visualization.html#categorize-species-by-color",
-    "title": "Visualization",
+    "title": "R-LAB: R for Data Science",
     "section": "Categorize species by color",
-    "text": "Categorize species by color"
+    "text": "Categorize species by color\n\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_point()`)."
   },
   {
     "objectID": "presentations/DataScience/visualization.html#adding-lines-of-best-fit",
     "href": "presentations/DataScience/visualization.html#adding-lines-of-best-fit",
-    "title": "Visualization",
+    "title": "R-LAB: R for Data Science",
     "section": "Adding lines of best fit",
-    "text": "Adding lines of best fit\nNext we will ad smooth curves displaying the realtionship between body mass and flipper length by species.\n\nggplot(\n  data = penguins,\n  mapping = aes(x = flipper_length_mm, y = body_mass_g, color = species)\n) +\n  geom_point() +\n  geom_smooth(method = \"lm\")\n\n# geom_smooth(): geometric object representing data with a smooth line\n# method = \"lm\": line of best fit based on a linear model"
+    "text": "Adding lines of best fit\nNext we will add smooth curves displaying the realtionship between body mass and flipper length by species.\n\nggplot(\n  data = penguins,\n  mapping = aes(x = flipper_length_mm, y = body_mass_g, color = species)\n) +\n  geom_point() +\n  geom_smooth(method = \"lm\") \n\n# geom_smooth(): geometric object representing data with a smooth line\n# method = \"lm\": line of best fit based on a linear model"
   },
   {
     "objectID": "presentations/DataScience/visualization.html#linear-models",
     "href": "presentations/DataScience/visualization.html#linear-models",
-    "title": "Visualization",
+    "title": "R-LAB: R for Data Science",
     "section": "Linear models",
-    "text": "Linear models"
+    "text": "Linear models\n\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\nWarning: Removed 2 rows containing non-finite outside the scale range\n(`stat_smooth()`).\n\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_point()`)."
   },
   {
     "objectID": "presentations/DataScience/visualization.html#single-line-of-best-fit",
     "href": "presentations/DataScience/visualization.html#single-line-of-best-fit",
-    "title": "Visualization",
+    "title": "R-LAB: R for Data Science",
     "section": "Single line of best fit",
     "text": "Single line of best fit\nWhat if we want a single line of best fit, but still want to categorize by species?\n\nggplot(\n  data = penguins,\n  mapping = aes(x = flipper_length_mm, y = body_mass_g)\n) +\n  geom_point(mapping = aes(color = species)) +\n  geom_smooth(method = \"lm\")\n\n# color = species in geom_point: only apply color to points\n# geom_smooth(method = \"lm\") now applied to mapping = aes()"
   },
   {
     "objectID": "presentations/DataScience/visualization.html#single-line-of-best-fit-1",
     "href": "presentations/DataScience/visualization.html#single-line-of-best-fit-1",
-    "title": "Visualization",
+    "title": "R-LAB: R for Data Science",
     "section": "Single line of best fit",
-    "text": "Single line of best fit"
+    "text": "Single line of best fit\n\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\nWarning: Removed 2 rows containing non-finite outside the scale range\n(`stat_smooth()`).\n\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_point()`)."
   },
   {
     "objectID": "presentations/DataScience/visualization.html#categorizing-by-shape",
     "href": "presentations/DataScience/visualization.html#categorizing-by-shape",
-    "title": "Visualization",
+    "title": "R-LAB: R for Data Science",
     "section": "Categorizing by shape",
     "text": "Categorizing by shape\nPeople perceive colors differently, so it is generally not a good idea to categorize only by color. In addition to color, we can also categorize by shapes.\n\nggplot(\n  data = penguins,\n  mapping = aes(x = flipper_length_mm, y = body_mass_g)\n) +\n  geom_point(mapping = aes(color = species, shape = species)) +\n  geom_smooth(method = \"lm\")"
   },
   {
     "objectID": "presentations/DataScience/visualization.html#categorizing-by-shape-1",
     "href": "presentations/DataScience/visualization.html#categorizing-by-shape-1",
-    "title": "Visualization",
+    "title": "R-LAB: R for Data Science",
     "section": "Categorizing by shape",
-    "text": "Categorizing by shape"
+    "text": "Categorizing by shape\n\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\nWarning: Removed 2 rows containing non-finite outside the scale range\n(`stat_smooth()`).\n\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_point()`)."
   },
   {
     "objectID": "presentations/DataScience/visualization.html#specify-titles-and-axes",
     "href": "presentations/DataScience/visualization.html#specify-titles-and-axes",
-    "title": "Visualization",
+    "title": "R-LAB: R for Data Science",
     "section": "Specify Titles and Axes",
-    "text": "Specify Titles and Axes\nWe likely do not want the variable name in our dataset to be the title of our axes. We can specify the “labels” of our plot using the labs() function in a new layer. We can also add a title and subtitle in this function.\n\nggplot(\n  data = penguins,\n  mapping = aes(x = flipper_length_mm, y = body_mass_g)\n) +\n  geom_point(aes(color = species, shape = species)) +\n  geom_smooth(method = \"lm\") +\n  labs(\n    title = \"Body mass and flipper length\",\n    subtitle = \"Dimensions for Adelie, Chinstrap, and Gentoo Penguins\",\n    x = \"Flipper length (mm)\",\n    y = \"Body mass (g)\",\n    color = \"Species\",\n    shape = \"Species\"\n  )"
+    "text": "Specify Titles and Axes\nWe likely do not want the variable name in our dataset to be the title of our axes. We can specify the “labels” of our plot using labs() in a new layer. We can also add a title and subtitle in this function.\n\nggplot(\n  data = penguins,\n  mapping = aes(x = flipper_length_mm, y = body_mass_g)\n) +\n  geom_point(aes(color = species, shape = species)) +\n  geom_smooth(method = \"lm\") +\n  labs(\n    title = \"Body mass and flipper length\",\n    subtitle = \"Dimensions for Adelie, Chinstrap, and Gentoo Penguins\",\n    x = \"Flipper length (mm)\", y = \"Body mass (g)\",\n    color = \"Species\", shape = \"Species\"\n  )"
   },
   {
     "objectID": "presentations/DataScience/visualization.html#clean-titles-and-axes",
     "href": "presentations/DataScience/visualization.html#clean-titles-and-axes",
-    "title": "Visualization",
+    "title": "R-LAB: R for Data Science",
     "section": "Clean titles and axes",
-    "text": "Clean titles and axes"
+    "text": "Clean titles and axes\n\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\nWarning: Removed 2 rows containing non-finite outside the scale range\n(`stat_smooth()`).\n\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_point()`)."
   },
   {
     "objectID": "presentations/DataScience/visualization.html#theme-component",
     "href": "presentations/DataScience/visualization.html#theme-component",
-    "title": "Visualization",
+    "title": "R-LAB: R for Data Science",
     "section": "Theme Component",
-    "text": "Theme Component\nOptional component: controls visuals of the plot that are not controlled by the data - Used to specify look and feel of your plot beyond ggplot default - Many options, from changing locations of titles and legends to changing the background color\nBuilt-in themes: theme_*() functions\n\n\n\n\n\n\n\ntheme_*()\nDescription\n\n\n\n\ntheme_grey()\nDefault theme: light grey background with white gridlines\n\n\ntheme_bw()\nBlack and white theme with white background and gridlines\n\n\ntheme_minimal()\nMinimalist: white background and no gridlines\n\n\ntheme_classic()\nClassic R: white background with solid axes and no gridlines\n\n\ntheme_void()\nEmpty theme: removes all backgrounds, axes, gridlines and labels\n\n\n\n\nggplot(\n  data = penguins,\n  mapping = aes(x = flipper_length_mm, y = body_mass_g)\n) +\n  geom_point(aes(color = species, shape = species)) +\n  geom_smooth(method = \"lm\") +\n  labs(\n    title = \"Body mass and flipper length\",\n    subtitle = \"Dimensions for Adelie, Chinstrap, and Gentoo Penguins\",\n    x = \"Flipper length (mm)\",\n    y = \"Body mass (g)\",\n    color = \"Species\",\n    shape = \"Species\"\n  ) +\n  theme_minimal()"
+    "text": "Theme Component\nOptional component: controls visuals of the plot that are not controlled by the data\n\nUsed to specify look and feel of your plot beyond ggplot default\nMany options, from changing locations of titles and legends to changing the background color\n\nBuilt-in themes: theme_*() functions\n\n\n\n\n\n\n\ntheme_*()\nDescription\n\n\n\n\ntheme_grey()\nDefault theme: light grey background with white gridlines\n\n\ntheme_bw()\nBlack and white theme with white background and gridlines\n\n\ntheme_minimal()\nMinimalist: white background and grey gridlines\n\n\ntheme_classic()\nClassic R: white background with solid axes and no gridlines\n\n\ntheme_void()\nEmpty theme: removes all backgrounds, axes, gridlines and labels\n\n\n\n\nmy.plot +\n  theme_minimal()"
   },
   {
     "objectID": "presentations/DataScience/visualization.html#theme_minimal",
     "href": "presentations/DataScience/visualization.html#theme_minimal",
-    "title": "Visualization",
+    "title": "R-LAB: R for Data Science",
     "section": "theme_minimal()",
-    "text": "theme_minimal()"
+    "text": "theme_minimal()\n\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\nWarning: Removed 2 rows containing non-finite outside the scale range\n(`stat_smooth()`).\n\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_point()`)."
   },
   {
     "objectID": "presentations/DataScience/visualization.html#manually-modifying-theme",
     "href": "presentations/DataScience/visualization.html#manually-modifying-theme",
-    "title": "Visualization",
+    "title": "R-LAB: R for Data Science",
     "section": "Manually modifying theme",
-    "text": "Manually modifying theme\n\ntheme() allows you to manually adjust your theme based your preferences\n\nFor example, you can adjust the locations of the title, subtitle, and legend\n\nggplot(\n  data = penguins,\n  mapping = aes(x = flipper_length_mm, y = body_mass_g)\n) +\n  geom_point(aes(color = species, shape = species)) +\n  geom_smooth(method = \"lm\") +\n  labs(\n    title = \"Body mass and flipper length\",\n    subtitle = \"Dimensions for Adelie, Chinstrap, and Gentoo Penguins\",\n    x = \"Flipper length (mm)\",\n    y = \"Body mass (g)\",\n    color = \"Species\",\n    shape = \"Species\"\n  ) +\n  theme_minimal() +\n  theme(\n    plot.title = element_text(hjust = 0.5), # hor. adjust title to center\n    plot.subtitle = element_text(hjust = 0.5), # hor. adjust subtitle to center\n    legend.position = c(0.85, 0.2) # x, y from bottom-left corner on scale 0-1\n  )"
+    "text": "Manually modifying theme\ntheme() allows you to manually adjust your theme based your preferences. For example, you can adjust the locations of the title, subtitle, and legend.\n\nmy.plot +\n  theme_minimal() +\n  theme(\n    plot.title = element_text(hjust = 0.5), # hor. adjust title to center\n    plot.subtitle = element_text(hjust = 0.5), # hor. adjust subtitle to center\n    legend.position = c(0.85, 0.2) # x, y from bottom-left corner on scale 0-1\n  )"
   },
   {
     "objectID": "presentations/DataScience/visualization.html#manually-adjust-text-location",
     "href": "presentations/DataScience/visualization.html#manually-adjust-text-location",
-    "title": "Visualization",
+    "title": "R-LAB: R for Data Science",
     "section": "Manually adjust text location",
-    "text": "Manually adjust text location"
+    "text": "Manually adjust text location\n\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\nWarning: Removed 2 rows containing non-finite outside the scale range\n(`stat_smooth()`).\n\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_point()`)."
   },
   {
     "objectID": "presentations/DataScience/visualization.html#remove-gridlines",
     "href": "presentations/DataScience/visualization.html#remove-gridlines",
-    "title": "Visualization",
+    "title": "R-LAB: R for Data Science",
     "section": "Remove gridlines",
-    "text": "Remove gridlines\nThe function element_blank() removes an element entirely. Setting panel.grid.major and panel.grid.minor to element_blank() will remove them from your figure.\n\nggplot(\n  data = penguins,\n  mapping = aes(x = flipper_length_mm, y = body_mass_g)\n) +\n  geom_point(aes(color = species, shape = species)) +\n  geom_smooth(method = \"lm\") +\n  labs(\n    title = \"Body mass and flipper length\",\n    subtitle = \"Dimensions for Adelie, Chinstrap, and Gentoo Penguins\",\n    x = \"Flipper length (mm)\",\n    y = \"Body mass (g)\",\n    color = \"Species\",\n    shape = \"Species\"\n  ) +\n  theme_minimal() +\n  theme(\n    plot.title = element_text(hjust = 0.5),\n    plot.subtitle = element_text(hjust = 0.5),\n    legend.position = c(0.85, 0.2),\n    panel.grid.major = element_blank(),\n    panel.grid.minor = element_blank()\n  )"
+    "text": "Remove gridlines\nThe function element_blank() removes an element entirely. Setting panel.grid.major and panel.grid.minor to element_blank() will remove them from your figure.\n\nmy.plot +\n  theme_minimal() +\n  theme(\n    plot.title = element_text(hjust = 0.5), \n    plot.subtitle = element_text(hjust = 0.5), \n    legend.position = c(0.85, 0.2), \n    panel.grid.major = element_blank(),\n    panel.grid.minor = element_blank()\n  )"
   },
   {
     "objectID": "presentations/DataScience/visualization.html#blank-gridlines",
     "href": "presentations/DataScience/visualization.html#blank-gridlines",
-    "title": "Visualization",
+    "title": "R-LAB: R for Data Science",
     "section": "Blank gridlines",
-    "text": "Blank gridlines"
+    "text": "Blank gridlines\n\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\nWarning: Removed 2 rows containing non-finite outside the scale range\n(`stat_smooth()`).\n\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_point()`)."
   },
   {
     "objectID": "presentations/DataScience/visualization.html#black-lines-identifying-axes",
@@ -198,16 +198,16 @@
   {
     "objectID": "presentations/DataScience/visualization.html#facets",
     "href": "presentations/DataScience/visualization.html#facets",
-    "title": "Visualization",
+    "title": "R-LAB: R for Data Science",
     "section": "Facets",
-    "text": "Facets"
+    "text": "Facets\nFacets can be used to separate small multiples or different subsets of data based on one or more variables. This is a quick and powerful way to show patterns and trends within subsets of data.\nfacet_wrap(~ species) allows us to look at the relationship between body mass and flipper length for different species in separate figures.\n\n  ggplot(\n    data = penguins,\n    mapping = aes(x = flipper_length_mm, y = body_mass_g)\n  ) +\n    geom_point() +\n    facet_wrap(~ species) +\n    labs(\n      title = \"Penguin body mass by flipper length\",\n      subtitle = \"Faceted by species\",\n      x = \"Flipper length (mm)\",\n      y = \"Body Mass (g)\"\n    )"
   },
   {
     "objectID": "presentations/DataScience/visualization.html#extensions-ggpubr",
     "href": "presentations/DataScience/visualization.html#extensions-ggpubr",
-    "title": "Visualization",
+    "title": "R-LAB: R for Data Science",
     "section": "Extensions: ggpubr",
-    "text": "Extensions: ggpubr"
+    "text": "Extensions: ggpubr\n\nggpubr is a package that creates publication ready plots\nRequires less manual formatting, but is still flexible to preferences\n\n\n# Install and load ggpubr package\ninstall.packages(\"ggpubr\")\nlibrary(ggpubr)\n\n# Density plot\nggdensity(penguins, x = \"body_mass_g\",\n  add = \"mean\", \n  color = \"species\", fill = \"species\")\n\n# Boxplot\nggboxplot(penguins, x = \"flipper_length_mm\", y = \"body_mass_g\",\n  add = \"jitter\",\n  color = \"species\")\n\n# Lollipop chart\nggdotchart(penguins, x = \"flipper_length_mm\", y = \"body_mass_g\",\n  color = \"species\",\n  sorting = \"ascending\",    # sorts data in ascending order\n  add = \"segments\",         # draws lines from y=0 to data point\n  ggtheme = theme_pubr()\n)"
   },
   {
     "objectID": "presentations/DataScience/visualization.html#next-steps",
@@ -215,5 +215,166 @@
     "title": "Visualization",
     "section": "Next steps",
     "text": "Next steps\n\nDevlop instructions for individual practice time: Bring back geometrical object layer (geom_) table layer\n\nHave them create a different type of plot (ie, not scatterplot) with penguins\n~30 minutes of independent work time, Ashlyn/Brian/Julianne/others available for questions/help\n~10-15 minutes of share time\n\nBack up: Ashlyn will have another plot created with code that she can walk through if nobody wants to share"
+  },
+  {
+    "objectID": "presentations/DataScience/visualization.html",
+    "href": "presentations/DataScience/visualization.html",
+    "title": "R-LAB: R for Data Science",
+    "section": "",
+    "text": "ggplot2 is a popular R package for creating data visualizations\n“Grammar of Graphics” - build visualization by combining independent components\n\n. . .\nKey Strengths:\n\nVersatile (scatterplots, boxplots, barcharts…)\nCustomizable: easily change formatting, fonts, colors…\nPublication-quality graphics\nOpen source and free"
+  },
+  {
+    "objectID": "presentations/DataScience/visualization.html#setting-plot-as-a-function",
+    "href": "presentations/DataScience/visualization.html#setting-plot-as-a-function",
+    "title": "R-LAB: R for Data Science",
+    "section": "Setting plot as a function",
+    "text": "Setting plot as a function\nOnce you are satisfied with the content of your figure, you can save it as a function. This allows you to quickly call and reproduce the figure.\n\nmy.plot &lt;- ggplot(\n  data = penguins,\n  mapping = aes(x = flipper_length_mm, y = body_mass_g)\n) +\n  geom_point(aes(color = species, shape = species)) +\n  geom_smooth(method = \"lm\") +\n  labs(\n    title = \"Body mass and flipper length\",\n    subtitle = \"Dimensions for Adelie, Chinstrap, and Gentoo Penguins\",\n    x = \"Flipper length (mm)\", y = \"Body mass (g)\",\n    color = \"Species\", shape = \"Species\"\n  )"
+  },
+  {
+    "objectID": "presentations/DataScience/visualization.html#my.plot",
+    "href": "presentations/DataScience/visualization.html#my.plot",
+    "title": "R-LAB: R for Data Science",
+    "section": "my.plot",
+    "text": "my.plot\n\nmy.plot\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\nWarning: Removed 2 rows containing non-finite outside the scale range\n(`stat_smooth()`).\n\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_point()`)."
+  },
+  {
+    "objectID": "presentations/DataScience/visualization.html#adding-axes",
+    "href": "presentations/DataScience/visualization.html#adding-axes",
+    "title": "R-LAB: R for Data Science",
+    "section": "Adding axes",
+    "text": "Adding axes\nWhat if you don’t want gridlines but still want a solid line to signify your x and y axes? You can tell ggplot to draw axes lines using axis.line = element_line()\n\nmy.plot +\n  theme_minimal() +\n  theme(\n    plot.title = element_text(hjust = 0.5), \n    plot.subtitle = element_text(hjust = 0.5), \n    legend.position = c(0.85, 0.2), \n    panel.grid.major = element_blank(),\n    panel.grid.minor = element_blank(),\n    axis.line = element_line(color = \"black\")\n  )"
+  },
+  {
+    "objectID": "presentations/DataScience/visualization.html#adding-axes-1",
+    "href": "presentations/DataScience/visualization.html#adding-axes-1",
+    "title": "R-LAB: R for Data Science",
+    "section": "Adding axes",
+    "text": "Adding axes\n\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\nWarning: Removed 2 rows containing non-finite outside the scale range\n(`stat_smooth()`).\n\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_point()`)."
+  },
+  {
+    "objectID": "presentations/DataScience/visualization.html#theme-as-a-function",
+    "href": "presentations/DataScience/visualization.html#theme-as-a-function",
+    "title": "R-LAB: R for Data Science",
+    "section": "Theme as a function",
+    "text": "Theme as a function\nJust like you set your graph as a function, you can also set your theme as a function. This will allow you to easily add the same theme to other graphs.\n\nmy.theme &lt;- theme_minimal() +\n  theme(\n    plot.title = element_text(hjust = 0.5), \n    plot.subtitle = element_text(hjust = 0.5), \n    legend.position = c(0.85, 0.2), \n    panel.grid.major = element_blank(),\n    panel.grid.minor = element_blank(),\n    axis.line = element_line(color = \"black\")\n  )\n\n\nmy.plot +\n    my.theme"
+  },
+  {
+    "objectID": "presentations/DataScience/visualization.html#facets-of-body-mass-by-slipper-length-by-species",
+    "href": "presentations/DataScience/visualization.html#facets-of-body-mass-by-slipper-length-by-species",
+    "title": "R-LAB: R for Data Science",
+    "section": "Facets of body mass by slipper length by species",
+    "text": "Facets of body mass by slipper length by species\n\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_point()`)."
+  },
+  {
+    "objectID": "presentations/DataScience/visualization.html#facets-with-my.theme",
+    "href": "presentations/DataScience/visualization.html#facets-with-my.theme",
+    "title": "R-LAB: R for Data Science",
+    "section": "Facets with my.theme",
+    "text": "Facets with my.theme\nApply my.theme to your new figure!\n\nggplot(\n    data = penguins,\n    mapping = aes(x = flipper_length_mm, y = body_mass_g)\n  ) +\n  geom_point() + \n  facet_wrap(~ species) +\n  labs(\n    title = \"Penguin body mass by flipper length\",\n    subtitle = \"Faceted by species\",\n    x = \"Flipper length (mm)\",\n    y = \"Body Mass (g)\"\n  ) +\n    my.theme"
+  },
+  {
+    "objectID": "presentations/DataScience/visualization.html#facets-with-my.theme-1",
+    "href": "presentations/DataScience/visualization.html#facets-with-my.theme-1",
+    "title": "R-LAB: R for Data Science",
+    "section": "Facets with my.theme",
+    "text": "Facets with my.theme\n\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_point()`)."
+  },
+  {
+    "objectID": "presentations/DataScience/visualization.html#ggpubr-example-plots",
+    "href": "presentations/DataScience/visualization.html#ggpubr-example-plots",
+    "title": "R-LAB: R for Data Science",
+    "section": "ggpubr example plots",
+    "text": "ggpubr example plots\n\nComplete description and additional plots: rpkgs.datanovia.com/ggpubr/\n\n\n\nWarning: package 'ggpubr' was built under R version 4.4.3\n\n\nWarning: Removed 2 rows containing non-finite outside the scale range\n(`stat_density()`).\n\n\n\n\n\n\n\n\n\nWarning: Removed 2 rows containing non-finite outside the scale range\n(`stat_boxplot()`).\n\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_point()`).\n\n\n\n\n\n\n\n\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_segment()`).\nRemoved 2 rows containing missing values or values outside the scale range\n(`geom_point()`)."
+  },
+  {
+    "objectID": "presentations/DataScience/visualization.html#ggplot2-hands-on-practice",
+    "href": "presentations/DataScience/visualization.html#ggplot2-hands-on-practice",
+    "title": "R-LAB: R for Data Science",
+    "section": "ggplot2 Hands-On Practice",
+    "text": "ggplot2 Hands-On Practice\n\nWork through the activity for your level — and continue to the next if you finish early!\n\nOpen visualization_activities.qmd in RStudio to get started\n\n\n\nLevel\nGroup\nActivity\n\n\n\n\n🟢 Beginner\nActivity 1\nFill in the blanks\n\n\n🟡 Intermediate\nActivity 2\nUpdate the facet plots\n\n\n🔴 Advanced\nActivity 3\nCreate figure using new dataset\n\n\n\n. . .\nFinished early? Try the bonus question or move to the next level!"
+  },
+  {
+    "objectID": "template.html",
+    "href": "template.html",
+    "title": "Introduction to R Programming",
+    "section": "",
+    "text": "R is a language and environment for statistical computing and graphics\n\n. . .\nKey Strengths:\n\nExtensive package ecosystem (CRAN)\nPowerful data visualization tools\nActive research community\nOpen source and free"
+  },
+  {
+    "objectID": "template.html#what-is-r",
+    "href": "template.html#what-is-r",
+    "title": "Introduction to R Programming",
+    "section": "",
+    "text": "R is a language and environment for statistical computing and graphics\n\n. . .\nKey Strengths:\n\nExtensive package ecosystem (CRAN)\nPowerful data visualization tools\nActive research community\nOpen source and free"
+  },
+  {
+    "objectID": "template.html#getting-started",
+    "href": "template.html#getting-started",
+    "title": "Introduction to R Programming",
+    "section": "Getting Started",
+    "text": "Getting Started\n\n\nInstallation Requirements:\n\nBase R: Core language\nRStudio: Integrated development environment\nPackages: Extended functionality\n\n\n💡 Tip: Always update R and packages regularly for latest features\n\n\nEssential Packages:\n\n\n\nPackage\nPurpose\n\n\n\n\ntidyverse\nData manipulation\n\n\nggplot2\nVisualization\n\n\ndplyr\nData wrangling\n\n\nreadr\nData import"
+  },
+  {
+    "objectID": "template.html#r-data-types-and-structures",
+    "href": "template.html#r-data-types-and-structures",
+    "title": "Introduction to R Programming",
+    "section": "R Data Types and Structures",
+    "text": "R Data Types and Structures\n\nFundamental Data Types\n\n\n# Numeric data\nnumeric_var &lt;- 42.7\nclass(numeric_var)\n\n# Character strings\ntext_var &lt;- \"Hello, R!\"\nnchar(text_var)\n\n# Logical values\nlogical_var &lt;- TRUE\nis.logical(logical_var)\n\n# Factors for categories\nfactor_var &lt;- factor(c(\"Low\", \"Medium\", \"High\"))\nlevels(factor_var)"
+  },
+  {
+    "objectID": "template.html#data-structures-in-r",
+    "href": "template.html#data-structures-in-r",
+    "title": "Introduction to R Programming",
+    "section": "Data Structures in R",
+    "text": "Data Structures in R\nVector Operations:\n\n# Creating vectors\nnumbers &lt;- c(1, 5, 10, 15, 20)\nnames &lt;- c(\"Alice\", \"Bob\", \"Charlie\")\n\n# Vector arithmetic (vectorized operations)\nnumbers * 2\n\n[1]  2 10 20 30 40\n\n\n. . .\n\nData Frames - The Heart of R\nData frames are R’s primary data structure for rectangular data, similar to spreadsheets or SQL tables.\n\n\n# Creating a data frame\ndf &lt;- data.frame(\n  Name = c(\"Alice\", \"Bob\", \"Charlie\"),\n  Age = c(25, 30, 35),\n  Score = c(85, 92, 78)\n)\nhead(df, 2)\n\n   Name Age Score\n1 Alice  25    85\n2   Bob  30    92"
+  },
+  {
+    "objectID": "template.html#data-import-and-export",
+    "href": "template.html#data-import-and-export",
+    "title": "Introduction to R Programming",
+    "section": "Data Import and Export",
+    "text": "Data Import and Export\n\nBest Practice: Always examine your data structure with str(), summary(), and head() after importing\n\n\n\nReading Data:\n\n# Read CSV\nread.csv(\"data.csv\")\n# Read Excel\nreadxl::read_excel(\"data.xlsx\")\n\n\nWriting Data:\n\n# Save as CSV\nwrite.csv(data, \"output.csv\")\n# Save R objects\nsave(data, file = \"data.RData\")"
+  },
+  {
+    "objectID": "template.html#data-visualization-with-ggplot2",
+    "href": "template.html#data-visualization-with-ggplot2",
+    "title": "Introduction to R Programming",
+    "section": "Data Visualization with ggplot2",
+    "text": "Data Visualization with ggplot2\n\nlibrary(ggplot2)\n\n# Sample data\nsample_data &lt;- data.frame(\n  x = 1:10,\n  y = c(2, 4, 3, 8, 6, 9, 7, 10, 12, 11),\n  group = rep(c(\"A\", \"B\"), each = 5)\n)\n\n# Create a professional plot\nggplot(sample_data, aes(x = x, y = y, color = group)) +\n  geom_line(size = 1.2) +\n  geom_point(size = 3) +\n  theme_minimal() +\n  labs(\n    title = \"Sample Time Series Data\",\n    x = \"Time\",\n    y = \"Value\",\n    color = \"Group\"\n  ) +\n  theme(plot.title = element_text(hjust = 0.5, size = 14))"
+  },
+  {
+    "objectID": "template.html#statistical-analysis-workflow",
+    "href": "template.html#statistical-analysis-workflow",
+    "title": "Introduction to R Programming",
+    "section": "Statistical Analysis Workflow",
+    "text": "Statistical Analysis Workflow\n\nReproducible Research Principles: Document your analysis, use version control, and create reproducible scripts\n\nTypical R Analysis Pipeline:\n\nData Import → read.csv(), read_excel()\nData Cleaning → dplyr functions, missing value handling\n\nExploratory Analysis → summary(), cor(), visualizations\nStatistical Modeling → lm(), glm(), specialized packages\nResults Interpretation → Coefficients, p-values, effect sizes\nReporting → R Markdown, Quarto, publication-ready outputs"
+  },
+  {
+    "objectID": "template.html#next-steps-and-resources",
+    "href": "template.html#next-steps-and-resources",
+    "title": "Introduction to R Programming",
+    "section": "Next Steps and Resources",
+    "text": "Next Steps and Resources\n\n\nLearning Path:\n\nFundamentals: R syntax, data types, functions\nData Manipulation: tidyverse\nStatistics: Hypothesis testing, regression\nAdvanced Topics: Shiny apps\n\n\nGetting Help:\n\n# Built-in help\n?function_name\nhelp(\"lm\")\n\n\nRemember: R has a steep learning curve initially, but becomes incredibly powerful once you master the basics.\n\n\n\n\nQuestions?\nContact: your.email@institution.edu"
+  },
+  {
+    "objectID": "presentations/Foundations.html",
+    "href": "presentations/Foundations.html",
+    "title": "Advanced R Foundations",
+    "section": "",
+    "text": "Names and Values\n\n\nApplying R to Lifestyle and Brain Health Research\n\n\n\n\n\n\n\n\nAug 12, 2026\n\n\nBrian C. Helsel, PhD\n\n\n\n\n\n\n\n\n\n\n\n\nVectors\n\n\nApplying R to Lifestyle and Brain Health Research\n\n\n\n\n\n\n\n\nAug 19, 2026\n\n\nMorgan Brucks, CCRP\n\n\n\n\n\n\n\n\n\n\n\n\nSubsetting\n\n\nApplying R to Lifestyle and Brain Health Research\n\n\n\n\n\n\n\n\nAug 26, 2026\n\n\nJulianne Clina, PhD\n\n\n\n\n\n\n\n\n\n\n\n\nControl Flow\n\n\nApplying R to Lifestyle and Brain Health Research\n\n\n\n\n\n\n\n\nSep 2, 2026\n\n\nJulianne G. Clina, PhD\n\n\n\n\n\n\n\n\n\n\n\n\nFunctions\n\n\nApplying R to Lifestyle and Brain Health Research\n\n\n\n\n\n\n\n\nSep 9, 2026\n\n\nAshlyn Barry\n\n\n\n\n\n\n\n\n\n\n\n\nEnvironments\n\n\nApplying R to Lifestyle and Brain Health Research\n\n\n\n\n\n\n\n\nSep 16, 2026\n\n\nIan Weidling, PhD\n\n\n\n\n\n\n\n\n\n\n\n\nAdvanced R: Conditions\n\n\nApplying R to Lifestyle and Brain Health Research\n\n\n\n\n\n\n\n\nSep 23, 2026\n\n\nBrian C. Helsel, PhD\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "presentations/SpecialTopics.html",
+    "href": "presentations/SpecialTopics.html",
+    "title": "Advanced R Special Topics",
+    "section": "",
+    "text": "Functional Programming\n\n\nApplying R to Lifestyle and Brain Health Research\n\n\n\n\n\n\n\n\nOct 7, 2026\n\n\nBrian C. Helsel, PhD\n\n\n\n\n\n\n\n\n\n\n\n\nObject Oriented Programming\n\n\nApplying R to Lifestyle and Brain Health Research\n\n\n\n\n\n\n\n\nOct 14, 2026\n\n\nBrian C. Helsel, PhD\n\n\n\n\n\n\n\n\n\n\n\n\nMeta-Programming\n\n\nApplying R to Lifestyle and Brain Health Research\n\n\n\n\n\n\n\n\nOct 21, 2026\n\n\nBrian C. Helsel, PhD\n\n\n\n\n\n\n\n\n\n\n\n\nMeasuring and Improving Performance\n\n\nApplying R to Lifestyle and Brain Health Research\n\n\n\n\n\n\n\n\nOct 28, 2026\n\n\nBrian C. Helsel, PhD\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "presentations.html",
+    "href": "presentations.html",
+    "title": "Presentations",
+    "section": "",
+    "text": "In R-LAB, you will develop highly practical, career-advancing programming skills as we cover topics related to data science and advanced R programming. We will work our way through the R for Data Science and Advanced R books together from June 24 to October 28, with a weekly presentation followed by a practical skill development activity. Below is the course outline:\n\n\nR for Data Science\n6 weeks | June 24 – July 29\nBegin your R-LAB journey by building the foundational skills every data professional needs. Working through R for Data Science, you will learn how to import, transform, and visualize data using the tidyverse, apply core programming concepts in R, and communicate your findings through polished reports and reproducible analyses.\n45-minute presentation + 45-minute skill development activity each week.\n\n\n\nAdvanced R Foundations\n7 weeks | August 12 – September 23\nDeepen your understanding of R as a programming language by exploring the internals that power everything you write. Drawing from Advanced R, this module covers vectors, subsetting, control flow, function creation, environments, and conditions — giving you a precise mental model of how R actually works under the hood.\n60-minute presentation + 45-minute skill development activity each week.\n\n\n\nAdvanced R Special Topics\n4 weeks | October 7 – October 28\nCap the program with R’s most powerful and expressive capabilities. This final module dives into functional and object-oriented programming, metaprogramming, and performance optimization — the techniques that distinguish proficient R users from expert ones and that open doors to building production-ready tools and packages.\n90-minute presentation + 45-minute skill development activity each week."
   }
 ]
